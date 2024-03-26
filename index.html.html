@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="preload" href="./font/BodoniFLF-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="active"> <a href="#">Home</a></li>
+                <li> <a href="#">Catalog</a></li>
+                <li> <a href="#">Gender</a></li>
+                <li> <a href="#">Brands</a></li>
+                <li> <a href="#">News</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="search-box">
+            <input type="text" placeholder="Search">
+            <div id="search-icon"> <ion-icon name="search"></ion-icon></div>
+        </div>
+        <div id="cart">
+            <h3>Cart</h3>
+            <h3 id="cart-count">3</h3>
+        </div >
+    </header>
+    <div id="products">
+        <div class="left">
+            <div id="cards">
+                <div id="card-up">
+                    <div class="card">
+                        <div class="newset">Newset</div>
+                        <div class="image img1"></div>
+                        <div class="detail">
+                            <div class="txt">
+                                <h4>Your text here</h4>
+                                <p>lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="icon">
+                                <ion-icon name="arrow-forward-circle"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image img2"></div>
+                        <div class="detail">
+                            <div class="txt">
+                                <h4>Your text here</h4>
+                                <p>lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="icon">
+                                <ion-icon name="arrow-forward-circle"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-down">
+                    <div class="card">
+                        <div class="image img3"></div>
+                        <div class="detail">
+                            <div class="txt">
+                                <h4>Your text here</h4>
+                                <p>lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="icon">
+                                <ion-icon name="arrow-forward-circle"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="newset newset2">Newset</div>
+                        <div class="image img4"></div>
+                        <div class="detail">
+                            <div class="txt">
+                                <h4>Your text here</h4>
+                                <p>lorem ipsum dolor sit</p>
+                            </div>
+                            <div class="icon">
+                                <ion-icon name="arrow-forward-circle"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="sale-card">
+                <div id="sale">Sale</div>
+                <div id="shop-now">Shop Now</div>
+                <div class="sale-image"></div>
+                <div class="detail">
+                    <h2>Your title</h2>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ducimus sapiente sit, quos
+                        quaerat repudiandae laboriosam, mollitia animi repellendus, corrupti consectetur eum beatae sint
+                        ipsam! Ex error eos,</p>
+                    <div id="sale-price">
+                        <div class="pr">
+                            <h2>$9,99</h2>
+                            <h2>Size</h2>
+                        </div>
+                        <div class="size">
+                            <h2>$4,99</h2>
+                            <div id="sale-size">
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                                <span>XL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contaner">
+        <div id="left">
+            <div id="left-first">
+                <div id="logo"></div>
+                <div id="filter">
+                    <h2>Filters</h2>
+                    <div id="filter-icon"> <ion-icon name="filter"></ion-icon></div>
+                    <div id="filter-togle">
+                    </div>
+                </div>
+                <div id="shop">
+                    <h2>Shop By</h2>
+                    <ul>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Gender <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                <select id="gender"> 
+                    <option value="all">All</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+                            </div>
+                        </li>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Brands <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                <select id="Brand"> 
+                    <option value="all">All</option>
+                    <option value="addidas">Addidas</option>
+                    <option value="puma">Puma</option>
+                    <option value="nika">Nika</option>
+                </select>
+                            </div>
+                        </li>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Style <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                            <select id="Style"> 
+                    <option value="all">All</option>
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
+                    <option value="semi-formal">Semi-Formal</option>
+                </select> </div>
+                        </li>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Price <ion-icon name="chevron-down-circle-outline"></ion-icon> 
+                            <select id="Price"> 
+                    <option value="all">All</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                </select></div>
+                        </li>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Season <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                           <select id="Season"> 
+                    <option value="all">All</option>
+                    <option value="summer">Summer</option>
+                    <option value="Winter">Winter</option>
+                </select>
+                 </div>
+                        </li>
+                        <li> <ion-icon class="dot" name="ellipse"></ion-icon>
+                            <div class="txt-icon"> Sales <ion-icon name="chevron-down-circle-outline"></ion-icon> 
+                            <select id="Brand"> 
+                    <option value="all">All</option>
+                    <option value="out season sale">Out season</option>
+                    <option value="in season sale">In season</option>
+                </select>
+            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="left-second"></div>
+        </div>
+        <div id="right"></div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
